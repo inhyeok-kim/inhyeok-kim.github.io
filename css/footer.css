@@ -1,0 +1,25 @@
+footer {
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+footer ul{
+    padding: 0px;
+}
+
+footer ul li{
+    color: var(--ih-grey);
+    font-size: 0.9rem;    
+}
+
+footer .contact-list {
+    width : 20%;
+}
+
+footer .site-list{
+    display: flex;
+}
+footer .site-list li{
+    display: flex;
+    align-items: center;
+}

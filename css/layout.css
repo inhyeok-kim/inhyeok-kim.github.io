@@ -1,0 +1,21 @@
+html, body{
+    margin: 0px;
+    background-color: white;
+}
+
+header{
+    height: 100px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--ih-light-grey);
+}
+
+main{
+    min-height: calc(100vh - 100px - 100px);
+    box-sizing: border-box;
+}
+
+footer{
+    height: 100px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--ih-light-grey);
+}
