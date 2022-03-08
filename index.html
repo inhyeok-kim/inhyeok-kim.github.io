@@ -69,9 +69,17 @@
   </footer>
 
   <script>
-    fetch('https://api.github.com/repos/inhyeok-kim/inhyeok-kim.github.io/contents/')
-    .then(response=>response.json())
-    .then(data => console.log(data));
+    async function loadFileList(dir){
+      let response = await fetch(`https://api.github.com/repos/inhyeok-kim/inhyeok-kim.github.io/contents/${dir}/`);
+      return await response.json(); // (3)
+    }
+
+    (async () => {
+      let root = await loadFileList('');
+      let blog = await loadFileList('blog');
+      console.log(blog);
+      console.log(root);
+    })();
 
   </script>
 
